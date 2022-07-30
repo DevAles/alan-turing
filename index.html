@@ -1,224 +1,246 @@
 <head></head>
+
 <body>
-  <style>
-    body {
-        font-size: larger;
-        font-family: Helvetica, Arial, Sans-Serif;
-        margin: 0px;
-        padding: 2em 10em;
-    }
+    <style>
+        body {
+            margin: 0px;
+            font-size: larger;
+            font-family: Helvetica, Arial, Sans-Serif;
+        }
 
-    h1 {
-        text-align: center;
-    }
+        h1 {
+            text-align: center;
+        }
 
-  </style>
-  <h1>ALAN TURING</h1>
+        #text {
+            background-color: #FFF;
+            color: #000;
+            padding: 2em 10em;
+        }
 
-  <p>Alan Mathison Turing foi um gênio, matemático, cientista da computação,
-  lógico, criptoanalista, filósofo e biólogo teórico.</p>
-  <p>Turing teve muita influência no desenvolvimento da teoria da computação,
-  providenciando a formalização dos conceitos de algoritmo e computação
-  com os Autômatos Finitos e a Máquina de Turing, que pode ser
-  consideirado o modelo de computador de uso geral.</p>
-  <p>Ele pode ser consideirado o pai da ciência da computação teórica e da
-  inteligência artificial.</p>
-  <p>Nascido em Maida Vale, Londres, Turing foi criado no Sul da Inglaterra.
-  Graduou-se em matemática no King&#39;s College, em Cambridge.</p>
-  <p>A mãe de Turing tinha uma máquina de escrever, e isso o fascinava. Na
-  infância, Turing desejava criar uma máquina de escrever, o que o
-  instigou a entender qual era a definição real de uma máquina mecânica.</p>
-  <p>As anotações de Turing sobre a Teoria da Relatividade mostraram uma
-  apreciação em nível de graduação no assunto, porém o interesse maior em
-  física por Turing veio logo após 1930 com a morte do seu primeiro amor:
-  Christopher Morcom.</p>
-  <p>A convicção de Turing de que agora deveria fazer o que Morcom não podia
-  o sustentou por pelo menos 3 anos de acordo com as cartas para a mãe de
-  Morcom.</p>
-  <p>Ele se questionava sobre como os pensamentos de Christopher estavam
-  incorporados na matéria e se consequentemente eles poderiam ser
-  liberados da matéria pela morte.</p>
-  <p>Essa questão o fez se aprofundar na área da física, especialmente sobre
-  o livro &quot;The Nature of the Physical World&quot;, perguntando-se se a teoria
-  da mecânica quântica afetava o problema tradicional da relação entre
-  pensamento e matéria.</p>
-  <p>Em 1932, Turing leu sobre o novo trabalho de Von Neumann sobre os
-  fundamentos lógicos da mecânica quântica e que ajudou a transição entre
-  a investigação emocional para a investigação intelectual sobre o assunto
-  e, ao mesmo tempo, foi quando se assumiu homossexual.</p>
-  <p>Ele também publicou uma prova demonstrando que o</p>
-  <p>Entscheidungsproblem, que foi proposto por David Hilbert e Wilhelm
-  Ackermann, não poderia ser respondido utilizando a computação.</p>
-  <p>O problema consiste basicamente em um algoritmo que considere como
-  entrada uma afirmação e responda &quot;Sim&quot; ou &quot;Não&quot; conforme a afirmação
-  seja matemáticamente válida.</p>
-  <p>Turing então definiu em seu artigo: &quot;A Computable Numbers, with an
-  Application to the Entscheidungsproblem&quot;</p>
-  <p>o que ficou conhecido como Máquina Universal de Turing (ou somente
-  Máquina de Turing), um modelo matemático da computação que define uma
-  máquina abstrata que manipula símbolos em uma fita de acordo com uma
-  tabela de regras.</p>
-  <p>Essa fita seria infinita pois permitiria qualquer algoritmo a ser
-  executado na máquina.</p>
-  <p>Apesar de ser um modelo simples, dado qualquer algoritmo computável, uma
-  Máquina de Turing é capaz de implementar a lógica desse algoritmo.</p>
-  <p>Esta máquina teórica é uma máquina de estados finitos, ou seja, um
-  autômato finito e é composta por essa fita infinita dividida em
-  &quot;células&quot;. A máquina posiciona uma &quot;cabeça&quot; acima de uma dessas células
-  e &quot;lê&quot; ou &quot;escreve&quot; um símbolo na fita com base no símbolo atual na fita
-  e no estado atual da própria máquina por instruções</p>
-  <p>especificadas do usuário.</p>
-  <p>A máquina escreve ou lê um símbolo na célula e/ou move a cabeça uma
-  célula para a direita ou para a esquerda e/ou conclui o algoritmo
-  baseado no símbolo observado na célula atual.</p>
-  <p>Poderíamos definir por exemplo uma máquina que tem o estado &quot;A&quot;, que ao
-  ler os símbolos &quot;1&quot; ou &quot;0&quot;, somente move a cabeça para a direita.</p>
-  <p>Porém ao ler um espaço vazio, a máquina muda o seu próprio estado para
-  &quot;B&quot; e move a cabeça para a esquerda.</p>
-  <p>No estado &quot;B&quot;, se a máquina ler o símbolo &quot;1&quot;, ele é sobrescrito por &quot;0&quot;
-  e move a cabeça para a esquerda.</p>
-  <p>Ao ler o símbolo &quot;0&quot; ou um espaço em branco, ele é sobrescrito pelo
-  símbolo &quot;1&quot; e a máquina conclui o algoritmo.</p>
-  <p>[ ] [ ] [ ] [1] [0] [1] [0] [ ] [ ] [ ]</p>
-  <p>[ ] [ ] [ ] [1] [0] [1] [1] [ ] [ ] [ ]</p>
-  <p>Este é um exemplo de incremento binário, que acontece frequentemente no
-  uso de dispositivos como computadores, celulares e outros dispositivos
-  eletrônicos dado que a Máquina de Turing é a base do armazenamento de
-  dados dessas máquinas.</p>
-  <p>Com este artigo, Alan Turing então comprovou que o Entscheidungsproblem
-  é indecidível utilizando a Máquina de Turing.</p>
-  <p>A Máquina de Turing também gerou o conceito de Turing Complete (ou
-  Turing Completeness), que seria um modelo de programa que conseguiria
-  simular uma outra Máquina de Turing, ou seja, uma Máquina de Turing não
-  necessariamente precisa ser física, um programa de computador ou celular
-  também pode simular o comportamento exato de outra Máquina de Turing
-  virtualmente.</p>
-  <p>Em abril de 1936, o artigo chamou a atenção de John Von Neumann, um
-  gênio que estabeleceu um papel importantíssimo nos fundamentos da
-  matemática, análise funcional, teoria ergódica, teoria dos grupos,
-  teoria da rede, teoria da representação, álgebras de operadores,
-  geometria, análise numérica, teoria dos jogos, teoria do equilíbrio
-  geral, mecânica quântica, hidrodinâmica, física nuclear, mecânica
-  estatística quântica, programação linear, meteorologia numérica,
-  computação científica, máquinas auto-replicantes, computação
-  estocástica, estatística e a Arquitetura Von Neumann que é uma das bases
-  da computação que nos suporta até hoje.</p>
-  <p>Porém ao mesmo tempo da publicação do artigo, ocorreu a popularização do
-  trabalho de Alonzo Church, que também contribuiu para a resolução do
-  Entscheidungsproblem, assim ofuscando o trabalho genial de Turing.</p>
-  <p>Ao longo do tempo foi visto que a abordagem de Turing era diferente e
-  obteve mais destaque, tornando a Máquina de Turing uma das bases da
-  teoria da computação moderna.</p>
-  <p>Em 1938, ele obteve o PhD do Departamento de Matemática da Universidade
-  de Princeton.</p>
-  <p>Durante a Segunda Guerra Mundial, Turing trabalhou para a Government
-  Code and Cypher School no Bletchley Park, o centro de decifração de
-  códigos da Grã-Bretanha que produziu a Ultra, uma máquina que quebrava a
-  criptografia de rádios e teleimpressoras do inimigo.</p>
-  <p>Ele liderou por um tempo a Hut 8, a seção responsável pela criptoanálise
-  naval alemã, desenvolvendo várias técnicas para acelerar a quebra de
-  cifras alemãs.</p>
-  <p>Turing desempenhou um papel fundamental quebrando uma das mais difíceis
-  cifras alemãs: a máquina Enigma.</p>
-  <p>A máquina Enigma funcionava com base em substituição de caracteres e
-  teria um sistema de conectores de configuração, alguns rotores e um
-  refletor para a criptografia da mensagem. Por exemplo: a letra &quot;a&quot;
-  poderia ser conectada na letra &quot;p&quot; ou qualquer outra letra exceto ela
-  mesma.</p>
-  <p>Essa máquina também mudava a letra convertida cada vez que ela aparecia
-  no texto. Por exemplo: a palavra &quot;Alan&quot; poderia ser convertida para
-  &quot;Rose&quot;. Mesmo com a letra &quot;a&quot; sendo repetida duas vezes, a letra &quot;r&quot; não
-  se repete.</p>
-  <p>Todo dia de manhã, os alemães enviavam uma carta usando a cifra do
-  Enigma, que começavam com &quot;Wetterbericht&quot;(ou em português: &quot;Tempo&quot;) e
-  terminavam com uma saudação a Hitler.</p>
-  <p>Alan Turing percebeu por meio dessas mensagens que, apesar da mensagem
-  estar criptografada, as letras não eram convertidas nelas mesmas e com
-  isso tentou decifrar por si mesmo tentando configurar a máquina
-  manualmente, porém não obteve sucesso pois os pares de letras se
-  conflitavam ao longo do texto.</p>
-  <p>Esses pares que se conflitavam poderiam ser descartados para diminuir o
-  número de tentativas de quebrar a criptografia, fazendo o processo ser
-  mais eficiente.</p>
-  <p>Turing então construiu a máquina Bombe para automatizar e agilizar o
-  processo de quebra da criptografia, que em 20 minutos conseguia com
-  sucesso obter a configuração do Enigma, assim possibilitando a derrota
-  dos nazistas.</p>
-  <p>Em outubro de 1948, Turing começou a trabalhar no laboratório de
-  computação da Universidade de Manchester. Ele comprou uma casa nas
-  proximidades de Wilmslow em 1950. Entre seus entusiasmos estavam seus
-  trabalhos sobre vários temas científicos, incluindo morfogênese, teoria
-  do crescimento e forma na biologia.</p>
-  <p>Turing também propôs o Turing Test (ou Teste de Turing), que basicamente
-  consiste em um juiz humano tendo duas conversas: Uma com um computador e
-  a outra com uma pessoa.</p>
-  <p>O juiz não saberia qual é qual, então se o computador pudesse enganar o
-  juiz e manter uma conversa indistinguível do humano, o computador</p>
-  <p>passaria no Teste de Turing, que comprovaria a capacidade do computador
-  de pensamento.</p>
-  <p>Turing foi tão importante na computação moderna que o A.M Turing Award,
-  que é também conhecido como o &quot;Prêmio Nobel&quot; da Ciência da Computação,
-  recebeu seu nome.</p>
-  <p>Apesar disso, Alan Turing foi preso e julgado em 31 de março de 1952,
-  depois que a polícia soube de seu relacionamento com um jovem de
-  Manchester.</p>
-  <p>Ele não fez nenhuma negação ou defesa séria, em vez disso, disse a todos
-  que não via nada de errado em suas ações.</p>
-  <p>Em vez de ir para a prisão, ele aceitou o tratamento de castração
-  química.</p>
-  <p>Após isso ele continuou o seu estudo em formações de padrões em objetos
-  esféricos e cilindros.</p>
-  <p>Ele estabeleceu como um objetivo particular a explicação para o
-  aparecimento de proporções de Fibonnaci nos padrões das folhas das
-  plantas.</p>
-  <p>Outro fato importante em sua vida foi que ele trabalhou para o GCHQ, o
-  sucessor de Blentchley Park no pós-guerra, mas desde 1948, as condições
-  da Guerra Fria e a aliança com os EUA fizeram com que homossexuais não
-  poderiam ter autorização de segurança.</p>
-  <p>Turing teve outra crise intensa em março de 1953 envolvendo a segurança
-  do Estado em relação a sua sexualidade, incluindo um caso de busca de um
-  norueguês que foi visitá-lo.</p>
-  <p>Não podendo falar com seus amigos sobre os segredos de justiça, Turing
-  estava solitário, nervoso, ansioso, insatisfeito e sombrio.</p>
-  <p>Turing foi encontrado morto em 8 de junho de 1954 por sua faxineira.</p>
-  <p>Ele havia morrido no dia anterior de envenenamento por cianeto.</p>
-  <p>Sua mãe acreditava que ele havia ingerido acidentalmente após um
-  experimento de química amadora, mas é mais crível que ele tenha
-  planejado com sucesso sua morte para permitir que ela acreditasse nisso.</p>
-  <p>O veredito do legista foi suicídio.</p>
-  <p>Em 2009, após uma campanha na Internet, o primeiro-ministro Gordon Brown
-  fez um pedido oficial de desculpas público sobre em nome do governo
-  britânico pela &quot;forma terrível como Turing foi tratado&quot;.</p>
-  <p>A rainha Elizabeth II concedeu um perdão ao matemático em 2014.</p>
-  <p>O termo &quot;Turing Law&quot; agora é usado informalmente para se referir a uma
-  lei de 2017 no Reino Unido que perdoou homens advertidos ou condenados
-  sob a legislação histórica que proibía atos homossexuais.</p>
-  <p>Fontes:</p>
-  <a href="https://en.wikipedia.org/wiki/Alan_Turing">https://en.wikipedia.org/wiki/Alan_Turing</a>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/Entscheidungsproblem">https://en.wikipedia.org/wiki/Entscheidungsproblem</a>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/Ultra">https://en.wikipedia.org/wiki/Ultra</a>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/Turing_machine">https://en.wikipedia.org/wiki/Turing_machine</a>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/Finite-state_machine">https://en.wikipedia.org/wiki/Finite-state_machine</a>
-  <br>
-  <a href="https://www.cia.gov/stories/story/the-enigma-of-alan-turing/">https://www.cia.gov/stories/story/the-enigma-of-alan-turing/</a>
-  <br>
-  <a href="https://www.turing.org.uk/publications/dnb.html">https://www.turing.org.uk/publications/dnb.html</a>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/Turing_completeness">https://en.wikipedia.org/wiki/Turing_completeness</a>
-  <br>
-  <a href="https://www.manchester.ac.uk/discover/news/gordon-brown-issues-apology-for-treatment-of-alan-turing/">https://www.manchester.ac.uk/discover/news/gordon-brown-issues-apology-for-treatment-of-alan-turing/</a>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/John_von_Neumann">https://en.wikipedia.org/wiki/John_von_Neumann</a>
-  <br>
-  <a href="http://www.turing.org.uk/book/"><em>Alan Turing: the Enigma</a>
-  <br>
-  <a href="https://youtu.be/G4MvFT8TGII">https://youtu.be/G4MvFT8TGII</a>
-  <br>
-  <a href="https://youtu.be/CcU5Kc_FN_4">https://youtu.be/CcU5Kc_FN_4</a>
-  <br>
-  <a href="https://www.scienceabc.com/innovation/cracking-the-uncrackable-how-did-alan-turing-and-his-team-crack-the-enigma-code.html">https://www.scienceabc.com/innovation/cracking-the-uncrackable-how-did-alan-turing-and-his-team-crack-the-enigma-code.html</a>
+        #fonts {
+            padding: 2em 10em;
+            background-color: #CCC;
+            border-radius: 8px;
+        }
+    </style>
+    <div id="text">
+        <h1>ALAN TURING</h1>
+
+        <p>Alan Mathison Turing foi um gênio, matemático, cientista da computação,
+            lógico, criptoanalista, filósofo e biólogo teórico.</p>
+        <p>Turing teve muita influência no desenvolvimento da teoria da computação,
+            providenciando a formalização dos conceitos de algoritmo e computação
+            com os Autômatos Finitos e a Máquina de Turing, que pode ser
+            consideirado o modelo de computador de uso geral.</p>
+        <p>Ele pode ser consideirado o pai da ciência da computação teórica e da
+            inteligência artificial.</p>
+        <p>Nascido em Maida Vale, Londres, Turing foi criado no Sul da Inglaterra.
+            Graduou-se em matemática no King&#39;s College, em Cambridge.</p>
+        <p>A mãe de Turing tinha uma máquina de escrever, e isso o fascinava. Na
+            infância, Turing desejava criar uma máquina de escrever, o que o
+            instigou a entender qual era a definição real de uma máquina mecânica.</p>
+        <p>As anotações de Turing sobre a Teoria da Relatividade mostraram uma
+            apreciação em nível de graduação no assunto, porém o interesse maior em
+            física por Turing veio logo após 1930 com a morte do seu primeiro amor:
+            Christopher Morcom.</p>
+        <p>A convicção de Turing de que agora deveria fazer o que Morcom não podia
+            o sustentou por pelo menos 3 anos de acordo com as cartas para a mãe de
+            Morcom.</p>
+        <p>Ele se questionava sobre como os pensamentos de Christopher estavam
+            incorporados na matéria e se consequentemente eles poderiam ser
+            liberados da matéria pela morte.</p>
+        <p>Essa questão o fez se aprofundar na área da física, especialmente sobre
+            o livro &quot;The Nature of the Physical World&quot;, perguntando-se se a teoria
+            da mecânica quântica afetava o problema tradicional da relação entre
+            pensamento e matéria.</p>
+        <p>Em 1932, Turing leu sobre o novo trabalho de Von Neumann sobre os
+            fundamentos lógicos da mecânica quântica e que ajudou a transição entre
+            a investigação emocional para a investigação intelectual sobre o assunto
+            e, ao mesmo tempo, foi quando se assumiu homossexual.</p>
+        <p>Ele também publicou uma prova demonstrando que o</p>
+        <p>Entscheidungsproblem, que foi proposto por David Hilbert e Wilhelm
+            Ackermann, não poderia ser respondido utilizando a computação.</p>
+        <p>O problema consiste basicamente em um algoritmo que considere como
+            entrada uma afirmação e responda &quot;Sim&quot; ou &quot;Não&quot; conforme a afirmação
+            seja matemáticamente válida.</p>
+        <p>Turing então definiu em seu artigo: &quot;A Computable Numbers, with an
+            Application to the Entscheidungsproblem&quot;</p>
+        <p>o que ficou conhecido como Máquina Universal de Turing (ou somente
+            Máquina de Turing), um modelo matemático da computação que define uma
+            máquina abstrata que manipula símbolos em uma fita de acordo com uma
+            tabela de regras.</p>
+        <p>Essa fita seria infinita pois permitiria qualquer algoritmo a ser
+            executado na máquina.</p>
+        <p>Apesar de ser um modelo simples, dado qualquer algoritmo computável, uma
+            Máquina de Turing é capaz de implementar a lógica desse algoritmo.</p>
+        <p>Esta máquina teórica é uma máquina de estados finitos, ou seja, um
+            autômato finito e é composta por essa fita infinita dividida em
+            &quot;células&quot;. A máquina posiciona uma &quot;cabeça&quot; acima de uma dessas células
+            e &quot;lê&quot; ou &quot;escreve&quot; um símbolo na fita com base no símbolo atual na fita
+            e no estado atual da própria máquina por instruções</p>
+        <p>especificadas do usuário.</p>
+        <p>A máquina escreve ou lê um símbolo na célula e/ou move a cabeça uma
+            célula para a direita ou para a esquerda e/ou conclui o algoritmo
+            baseado no símbolo observado na célula atual.</p>
+        <p>Poderíamos definir por exemplo uma máquina que tem o estado &quot;A&quot;, que ao
+            ler os símbolos &quot;1&quot; ou &quot;0&quot;, somente move a cabeça para a direita.</p>
+        <p>Porém ao ler um espaço vazio, a máquina muda o seu próprio estado para
+            &quot;B&quot; e move a cabeça para a esquerda.</p>
+        <p>No estado &quot;B&quot;, se a máquina ler o símbolo &quot;1&quot;, ele é sobrescrito por &quot;0&quot;
+            e move a cabeça para a esquerda.</p>
+        <p>Ao ler o símbolo &quot;0&quot; ou um espaço em branco, ele é sobrescrito pelo
+            símbolo &quot;1&quot; e a máquina conclui o algoritmo.</p>
+        <p>[ ] [ ] [ ] [1] [0] [1] [0] [ ] [ ] [ ]</p>
+        <p>[ ] [ ] [ ] [1] [0] [1] [1] [ ] [ ] [ ]</p>
+        <p>Este é um exemplo de incremento binário, que acontece frequentemente no
+            uso de dispositivos como computadores, celulares e outros dispositivos
+            eletrônicos dado que a Máquina de Turing é a base do armazenamento de
+            dados dessas máquinas.</p>
+        <p>Com este artigo, Alan Turing então comprovou que o Entscheidungsproblem
+            é indecidível utilizando a Máquina de Turing.</p>
+        <p>A Máquina de Turing também gerou o conceito de Turing Complete (ou
+            Turing Completeness), que seria um modelo de programa que conseguiria
+            simular uma outra Máquina de Turing, ou seja, uma Máquina de Turing não
+            necessariamente precisa ser física, um programa de computador ou celular
+            também pode simular o comportamento exato de outra Máquina de Turing
+            virtualmente.</p>
+        <p>Em abril de 1936, o artigo chamou a atenção de John Von Neumann, um
+            gênio que estabeleceu um papel importantíssimo nos fundamentos da
+            matemática, análise funcional, teoria ergódica, teoria dos grupos,
+            teoria da rede, teoria da representação, álgebras de operadores,
+            geometria, análise numérica, teoria dos jogos, teoria do equilíbrio
+            geral, mecânica quântica, hidrodinâmica, física nuclear, mecânica
+            estatística quântica, programação linear, meteorologia numérica,
+            computação científica, máquinas auto-replicantes, computação
+            estocástica, estatística e a Arquitetura Von Neumann que é uma das bases
+            da computação que nos suporta até hoje.</p>
+        <p>Porém ao mesmo tempo da publicação do artigo, ocorreu a popularização do
+            trabalho de Alonzo Church, que também contribuiu para a resolução do
+            Entscheidungsproblem, assim ofuscando o trabalho genial de Turing.</p>
+        <p>Ao longo do tempo foi visto que a abordagem de Turing era diferente e
+            obteve mais destaque, tornando a Máquina de Turing uma das bases da
+            teoria da computação moderna.</p>
+        <p>Em 1938, ele obteve o PhD do Departamento de Matemática da Universidade
+            de Princeton.</p>
+        <p>Durante a Segunda Guerra Mundial, Turing trabalhou para a Government
+            Code and Cypher School no Bletchley Park, o centro de decifração de
+            códigos da Grã-Bretanha que produziu a Ultra, uma máquina que quebrava a
+            criptografia de rádios e teleimpressoras do inimigo.</p>
+        <p>Ele liderou por um tempo a Hut 8, a seção responsável pela criptoanálise
+            naval alemã, desenvolvendo várias técnicas para acelerar a quebra de
+            cifras alemãs.</p>
+        <p>Turing desempenhou um papel fundamental quebrando uma das mais difíceis
+            cifras alemãs: a máquina Enigma.</p>
+        <p>A máquina Enigma funcionava com base em substituição de caracteres e
+            teria um sistema de conectores de configuração, alguns rotores e um
+            refletor para a criptografia da mensagem. Por exemplo: a letra &quot;a&quot;
+            poderia ser conectada na letra &quot;p&quot; ou qualquer outra letra exceto ela
+            mesma.</p>
+        <p>Essa máquina também mudava a letra convertida cada vez que ela aparecia
+            no texto. Por exemplo: a palavra &quot;Alan&quot; poderia ser convertida para
+            &quot;Rose&quot;. Mesmo com a letra &quot;a&quot; sendo repetida duas vezes, a letra &quot;r&quot; não
+            se repete.</p>
+        <p>Todo dia de manhã, os alemães enviavam uma carta usando a cifra do
+            Enigma, que começavam com &quot;Wetterbericht&quot;(ou em português: &quot;Tempo&quot;) e
+            terminavam com uma saudação a Hitler.</p>
+        <p>Alan Turing percebeu por meio dessas mensagens que, apesar da mensagem
+            estar criptografada, as letras não eram convertidas nelas mesmas e com
+            isso tentou decifrar por si mesmo tentando configurar a máquina
+            manualmente, porém não obteve sucesso pois os pares de letras se
+            conflitavam ao longo do texto.</p>
+        <p>Esses pares que se conflitavam poderiam ser descartados para diminuir o
+            número de tentativas de quebrar a criptografia, fazendo o processo ser
+            mais eficiente.</p>
+        <p>Turing então construiu a máquina Bombe para automatizar e agilizar o
+            processo de quebra da criptografia, que em 20 minutos conseguia com
+            sucesso obter a configuração do Enigma, assim possibilitando a derrota
+            dos nazistas.</p>
+        <p>Em outubro de 1948, Turing começou a trabalhar no laboratório de
+            computação da Universidade de Manchester. Ele comprou uma casa nas
+            proximidades de Wilmslow em 1950. Entre seus entusiasmos estavam seus
+            trabalhos sobre vários temas científicos, incluindo morfogênese, teoria
+            do crescimento e forma na biologia.</p>
+        <p>Turing também propôs o Turing Test (ou Teste de Turing), que basicamente
+            consiste em um juiz humano tendo duas conversas: Uma com um computador e
+            a outra com uma pessoa.</p>
+        <p>O juiz não saberia qual é qual, então se o computador pudesse enganar o
+            juiz e manter uma conversa indistinguível do humano, o computador</p>
+        <p>passaria no Teste de Turing, que comprovaria a capacidade do computador
+            de pensamento.</p>
+        <p>Turing foi tão importante na computação moderna que o A.M Turing Award,
+            que é também conhecido como o &quot;Prêmio Nobel&quot; da Ciência da Computação,
+            recebeu seu nome.</p>
+        <p>Apesar disso, Alan Turing foi preso e julgado em 31 de março de 1952,
+            depois que a polícia soube de seu relacionamento com um jovem de
+            Manchester.</p>
+        <p>Ele não fez nenhuma negação ou defesa séria, em vez disso, disse a todos
+            que não via nada de errado em suas ações.</p>
+        <p>Em vez de ir para a prisão, ele aceitou o tratamento de castração
+            química.</p>
+        <p>Após isso ele continuou o seu estudo em formações de padrões em objetos
+            esféricos e cilindros.</p>
+        <p>Ele estabeleceu como um objetivo particular a explicação para o
+            aparecimento de proporções de Fibonnaci nos padrões das folhas das
+            plantas.</p>
+        <p>Outro fato importante em sua vida foi que ele trabalhou para o GCHQ, o
+            sucessor de Blentchley Park no pós-guerra, mas desde 1948, as condições
+            da Guerra Fria e a aliança com os EUA fizeram com que homossexuais não
+            poderiam ter autorização de segurança.</p>
+        <p>Turing teve outra crise intensa em março de 1953 envolvendo a segurança
+            do Estado em relação a sua sexualidade, incluindo um caso de busca de um
+            norueguês que foi visitá-lo.</p>
+        <p>Não podendo falar com seus amigos sobre os segredos de justiça, Turing
+            estava solitário, nervoso, ansioso, insatisfeito e sombrio.</p>
+        <p>Turing foi encontrado morto em 8 de junho de 1954 por sua faxineira.</p>
+        <p>Ele havia morrido no dia anterior de envenenamento por cianeto.</p>
+        <p>Sua mãe acreditava que ele havia ingerido acidentalmente após um
+            experimento de química amadora, mas é mais crível que ele tenha
+            planejado com sucesso sua morte para permitir que ela acreditasse nisso.</p>
+        <p>O veredito do legista foi suicídio.</p>
+        <p>Em 2009, após uma campanha na Internet, o primeiro-ministro Gordon Brown
+            fez um pedido oficial de desculpas público sobre em nome do governo
+            britânico pela &quot;forma terrível como Turing foi tratado&quot;.</p>
+        <p>A rainha Elizabeth II concedeu um perdão ao matemático em 2014.</p>
+        <p>O termo &quot;Turing Law&quot; agora é usado informalmente para se referir a uma
+            lei de 2017 no Reino Unido que perdoou homens advertidos ou condenados
+            sob a legislação histórica que proibía atos homossexuais.</p>
+    </div>
+
+    <div id="fonts">
+        <h1>Fontes:</h1>
+        <a href="https://en.wikipedia.org/wiki/Alan_Turing">https://en.wikipedia.org/wiki/Alan_Turing</a>
+        <br>
+        <a
+            href="https://en.wikipedia.org/wiki/Entscheidungsproblem">https://en.wikipedia.org/wiki/Entscheidungsproblem</a>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Ultra">https://en.wikipedia.org/wiki/Ultra</a>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/Turing_machine">https://en.wikipedia.org/wiki/Turing_machine</a>
+        <br>
+        <a
+            href="https://en.wikipedia.org/wiki/Finite-state_machine">https://en.wikipedia.org/wiki/Finite-state_machine</a>
+        <br>
+        <a
+            href="https://www.cia.gov/stories/story/the-enigma-of-alan-turing/">https://www.cia.gov/stories/story/the-enigma-of-alan-turing/</a>
+        <br>
+        <a href="https://www.turing.org.uk/publications/dnb.html">https://www.turing.org.uk/publications/dnb.html</a>
+        <br>
+        <a
+            href="https://en.wikipedia.org/wiki/Turing_completeness">https://en.wikipedia.org/wiki/Turing_completeness></a>
+        <br>
+        <a
+            href="https://www.manchester.ac.uk/discover/news/gordon-brown-issues-apology-for-treatment-of-alan-turing/">https://www.manchester.ac.uk/discover/news/gordon-brown-issues-apology-for-treatment-of-alan-turing/</a>
+        <br>
+        <a href="https://en.wikipedia.org/wiki/John_von_Neumann">https://en.wikipedia.org/wiki/John_von_Neumann</a>
+        <br>
+        <a href="http://www.turing.org.uk/book/">Alan Turing: the Enigma</a>
+        <br>
+        <a href="https://youtu.be/G4MvFT8TGII">https://youtu.be/G4MvFT8TGII</a>
+        <br>
+        <a href="https://youtu.be/CcU5Kc_FN_4">https://youtu.be/CcU5Kc_FN_4</a>
+        <br>
+        <a
+            href="https://www.scienceabc.com/innovation/cracking-the-uncrackable-how-did-alan-turing-and-his-team-crack-the-enigma-code.html">https://www.scienceabc.com/innovation/cracking-the-uncrackable-how-did-alan-turing-and-his-team-crack-the-enigma-code.html</a>
+    </div>
 </body>
